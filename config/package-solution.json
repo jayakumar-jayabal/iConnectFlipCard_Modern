@@ -1,0 +1,22 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "iConnectFlipCard3",
+    "id": "7f3a2c91-8d46-4b15-a7e2-5c9f0138d624",
+    "version": "3.0.0.0",
+    "skipFeatureDeployment": false,
+    "includeClientSideAssets": true,
+    
+    "features": [
+      {
+        "title": "Application Extension - iConnect-Flip Card New.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "c84e5f27-3a91-4d68-b742-19f0e6ac53bd",
+        "version": "3.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/iConnectFlipCardApp_3.0.sppkg"
+  }
+}

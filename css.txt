@@ -1,0 +1,452 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+// Make workbench canvas use full page width  
+:global(#workbenchPageContent) {
+    max-width: initial;
+}
+
+:global(.ControlZone) {
+    max-width: initial;
+}
+
+:global(.ms-TextField-fieldGroup) {
+    height: 34px;
+}
+
+.imageGallery {
+    .container {
+        @include ms-Grid;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .row {
+        @include ms-Grid-row;   
+    }
+    .column {
+        @include ms-Grid-col;
+        padding-bottom: 20px;
+    }
+    .mslg12 {
+        @include ms-lg12;
+    }
+    .mslg6 {
+        @include ms-lg6;
+    }
+    .mslg3 {
+        @include ms-lg3;
+    }
+    .header {
+        .pageTitle {
+            padding-bottom: 9px;
+            margin: 0px 0 -20px;
+            border-bottom: 1px solid #ffff;
+            background-color: #ffff;
+            font-family: Helvetica;
+            text-align: center;
+            color:#ee3134;
+        }
+        small {
+            font-size: 65%;
+            font-weight: 400;
+            line-height: 1;
+            color: #777;
+        }
+    }
+    .filters {
+        .filter {
+            padding-top: 0px;
+            padding-bottom: 15px;
+        }
+        .searchBox {
+            padding-top: 0px;
+            padding-bottom: 15px;
+            width: 100%;
+            .searchBoxInputField {
+                padding: 0px;
+            }
+        }
+    }
+    .mainContent {
+        .thumbnail {
+            cursor: pointer;
+            display: block;
+            padding: 4px;
+            margin-bottom: 20px;
+            line-height: 1.42857143;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            -webkit-transition: border .2s ease-in-out;
+            -o-transition: border .2s ease-in-out;
+            transition: border .2s ease-in-out;
+            img {
+                margin-right: auto;
+                margin-left: auto;
+                display: block;
+                max-width: 100%;
+                height: auto;
+                border: 0px;
+            }
+        }
+        .bkImgcontainer{
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .bkImgtopleft{
+
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+        .bkImgcentered{
+            // position: absolute;
+            // top: 25%;
+            // left: 48%;
+            // transform: translate(-50%, -50%);
+            // bottom: 20px;
+            // right: -150px;
+            // padding-left: 26px;
+            // padding-right: 20px;
+            position: absolute;
+            top: 88%;
+            left: 60%;
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            bottom: 20px;
+            right: -150px;
+            padding-left: 26px;
+            padding-right: 20px;
+        }
+        .flipcard{
+            background-color: transparent;
+            width: 379px;
+            height: 150px;
+            perspective: 1000px;
+        }
+        .flipcardinner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+          
+          .flipcard:hover .flipcardinner {
+            transform: rotateY(180deg);
+            cursor: pointer;
+          }
+          
+          .flipcardfront, .flipcardback {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+          
+          .flipcardfront {
+            background-color: #bbb;
+            color: black;
+          }
+          
+          .flipcardback {
+            background-color: #ee3134;
+            color: white;
+            transform: rotateY(180deg);
+          }
+          .flipWidth{
+            width:100%;height:100%;
+
+          }
+        //   .flip-container {
+        //     perspective: 1000;
+        //     transform-style: preserve-3d;
+        //     display: inline-block;
+        // }
+
+        .flipcard {
+            position: relative;
+            width: 256px;
+            height: 156px;
+            perspective: 1000px;
+          }
+          .flipcard.v:hover .flipcardfront, .flipcard.v.flip .flipcardfront{
+             transform: rotateX(180deg);
+            cursor: pointer;
+          }
+          .flipcard.v:hover .flipcardback, .flipcard.v.flip .flipcardback{
+            transform: rotateX(0deg);
+            cursor: pointer;
+          }
+          .flipcard.v .flipcardback{
+            transform: rotateX(-180deg);
+          }
+          .flipcard.h:hover .flipcardfront, .flipcard.h.flip .flipcardfront{
+             transform: rotateY(180deg);
+            cursor: pointer;
+          }
+          .flipcard.h:hover .flipcardback, .flipcard.h.flip .flipcardback{
+            transform: rotateY(0deg);
+            cursor: pointer;
+          }
+
+          #flipfloptext{
+            display: block;
+          }
+
+          .showme{
+            display: block;
+
+          }
+
+         
+
+          .flipcard.h .flipcardback{
+            transform: rotateY(-180deg);
+          }
+          .flipcard .flipcardfront
+          {             
+            
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: all 0.6s ease-in;
+            color: white;
+            background-color: #0078d4;
+            border: 4px solid #0078d4;
+            backface-visibility: hidden;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+
+          .text {
+
+            /* white-space: nowrap; */
+            /* overflow: hidden; */
+            text-overflow: ellipsis;
+            font-size: initial;
+            font-style: oblique;
+            text-align: left;
+            /* display: -webkit-box; */
+            /* -webkit-line-clamp: 2; */
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            /* margin: 0;*/
+
+
+
+         }
+
+         .tooltip {
+            position: relative;
+            display: inline-block;
+            // border-bottom: 1px dotted #ee3134;
+          }
+          
+          .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #ee3134;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+          
+            /* Position the tooltip */
+            position: relative;
+            z-index: 1;
+          }
+          
+          .tooltip:hover .tooltiptext {
+            visibility: visible;
+          }
+
+          // .flipfloptext{
+
+          //   width: 256px;
+          //   height: 35px;
+          //   color: #fff;
+          //   background-color: #0078d4;
+          //   border: 4px solid #0078d4;
+          // }
+          .flipfloptext{
+            position: relative;
+            width: 256px;
+            height: 180px;
+            -webkit-perspective: 1000px;
+            perspective: 1000px;
+          }
+          
+
+          .flipcard .flipcardback
+          {
+
+            position:absolute;
+            width: 256px;
+            height: 150px;
+            text-align: center;
+            transition: all 0.6s ease-in;
+            color: white;
+            background-color: #0078d4;
+            border: 4px solid #0078d4;
+            backface-visibility: hidden;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+              
+            
+            font-size: medium;
+            font-style: oblique;
+            
+            //padding: 0 20px;
+            //margin: 20px;
+            display: flex;
+            justify-content: center; /* align horizontal */
+            align-items: center; /* align vertical */
+          }
+        
+     
+          .textblock{
+
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: black;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        .modalContent {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            position: relative;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: 6px;
+            outline: 0;
+            .modalBody {
+                position: relative;
+                padding: 15px;
+            }
+        }
+
+        #flipfloptextShow{ 
+          display: block;
+        }
+        .flipcard.h:hover #flipfloptextShow{
+          display : none !important;
+        }
+        .flipcard.h:hover .ok{
+          display : none !important;
+        }
+        .flipcard.h:flip #flipfloptextShow{
+          display : none !important;
+        }
+        .flipcard.h:flip .ok{
+          display : none !important;
+        }
+       
+        .flipcard:hover #flipfloptext{
+          display: none !important;
+       }
+       .flipcardfront:hover #flipfloptext{
+
+        display: none !important;
+       }
+
+
+
+
+
+
+    }
+    .pagination {
+        .pager {
+            padding-left: 0;
+            margin: 20px 0;
+            text-align: center;
+            list-style: none;
+            li {
+                display: inline;
+                padding: 0px 10px;
+                button {
+                    display: inline-block;
+                    padding: 5px 14px;
+                    background-color: $ms-color-themePrimary;
+                    border: 1px solid #ddd;
+                    border-radius: 15px;
+                    color: #fff;
+                    text-decoration: none;
+                    &:disabled {
+                        background-color: $ms-color-neutralTertiary;
+                    }
+                }
+            }
+        }
+    }
+    .loader {
+        margin: 0 auto;
+        .circle {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .customIcons {
+        .msIconTag {
+            font-size: 18px;
+            vertical-align: middle;
+        }
+    }
+    .hidden {
+        display: none !important;
+    }
+    .visible {
+        visibility: visible !important;
+    }
+    .status{
+        float:left
+    }
+    figcaption{
+        //background-color: #eee;
+        padding: 10px 0px 29px 18px;
+        text-align: left;
+        text-decoration: none;
+        font-size: medium;
+        font-family: inherit;
+        font-weight: 400;
+    }
+    
+}
+
+//common
+.panel {
+    border-color: #ddd;
+    margin-bottom: 20px;
+    background-color: #ffff;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-sizing:  content-box;
+    .panelBody {
+        padding: 15px 0px;
+    }
+}
+
+.listGroup {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    max-width: 400px;
+    margin-top: 0;
+    .listGroupItem {
+        position: relative;
+        display: block;
+        padding: .75rem 1.25rem;
+        margin-bottom: -1px;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, .125);
+    }
+}

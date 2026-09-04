@@ -1,0 +1,25 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.configureWebPart {
+    .container {
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .description {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: red;
+        }
+        .button {
+            margin-bottom: 20px;
+            color: red;
+        }
+      
+    }
+    .SetupText{
+        font-size: 18px;
+        font-weight: bold;
+        color: red;
+    }
+}

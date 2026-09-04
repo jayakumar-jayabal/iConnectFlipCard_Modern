@@ -1,0 +1,1527 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+// Make workbench canvas use full page width  
+:global(#workbenchPageContent) {
+    max-width: initial;
+}
+
+:global(.ControlZone) {
+    max-width: initial;
+}
+
+:global(.ms-TextField-fieldGroup) {
+    height: 34px;
+}
+
+:global(span[id^="PropertyPaneGroup-"]) {
+    font-weight: 700 !important;
+    color: #EE3134 !important;
+    font-size: 16px !important;
+    background-color: #f3f3f3 !important;
+}
+
+:global {
+    .ControlZoneEmphasisBackground {
+        background-color: transparent;
+    }
+}
+
+.imageGallery {
+
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+
+
+    // .container {
+    //     @include ms-Grid;
+    //     margin-right: auto;
+    //     margin-left: auto;
+    // }
+
+    .container {
+        @include ms-Grid;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .row {
+        @include ms-Grid-row;
+    }
+
+    .column {
+        @include ms-Grid-col;
+        padding-bottom: 20px;
+    }
+
+    .mslg12 {
+        @include ms-lg12;
+    }
+
+    .mslg6 {
+        @include ms-lg6;
+    }
+
+    .mslg3 {
+        @include ms-lg3;
+    }
+
+    .header {
+        .pageTitle {
+            padding-bottom: 9px;
+            margin: 0px 0 -20px;
+            border-bottom: 1px solid #ffff;
+            background-color: #ffff;
+            font-family: Helvetica;
+            text-align: center;
+            color: #ee3134;
+        }
+
+        small {
+            font-size: 65%;
+            font-weight: 400;
+            line-height: 1;
+            color: #777;
+        }
+    }
+
+    .filters {
+        .filter {
+            padding-top: 0px;
+            padding-bottom: 15px;
+        }
+
+        .searchBox {
+            padding-top: 0px;
+            padding-bottom: 15px;
+            width: 100%;
+
+            .searchBoxInputField {
+                padding: 0px;
+            }
+        }
+    }
+
+    .mainContent {
+        .thumbnail {
+            cursor: pointer;
+            display: block;
+            padding: 4px;
+            margin-bottom: 20px;
+            line-height: 1.42857143;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            -webkit-transition: border .2s ease-in-out;
+            -o-transition: border .2s ease-in-out;
+            transition: border .2s ease-in-out;
+
+            img {
+                margin-right: auto;
+                margin-left: auto;
+                display: block;
+                max-width: 100%;
+                height: auto;
+                border: 0px;
+            }
+        }
+
+        .bkImgcontainer {
+            position: relative;
+            // text-align: center;
+            color: white;
+        }
+
+        .bkImgtopleft {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+        }
+
+        .bkImgcentered {
+            position: absolute;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            bottom: 20px;
+            right: -150px;
+            padding-left: 26px;
+        }
+
+        .ms-TooltipHost.root-149 {
+            font-size: small;
+        }
+
+        .ms-ChoiceField-labelWrapper.labelWrapper-355 {
+            font-size: small;
+        }
+
+        .ms-ChoiceField.ms-ChoiceField--image.root-347 {
+            width: inherit !important;
+        }
+
+        #flipfloptext {
+            display: block;
+        }
+
+        .showme {
+            display: block;
+        }
+
+        .text {
+            /* white-space: nowrap; */
+            /* overflow: hidden; */
+            text-overflow: ellipsis;
+            // font-size: medium;
+            font-style: normal;
+            display: inline-block;
+            word-break: break-word;
+            // text-align: left;
+            /* display: -webkit-box; */
+            /* -webkit-line-clamp: 2; */
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            // -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            /* margin: 0;*/
+        }
+
+        .fontLineWrapLineTwo {
+            line-clamp: 2;
+            -webkit-line-clamp: 2;
+        }
+
+        .fontHeight1em {
+            height: 1em;
+        }
+
+        .fontHeight0em {
+            height: 0em;
+        }
+
+        .fontHeight1halfem {
+            height: 1.5em;
+        }
+
+        .fontHeight05halfem {
+            height: 0.5em;
+        }
+
+        .fontHeight2em {
+            height: 2em;
+        }
+
+        .fontLineWrapLineOne {
+            line-clamp: 1;
+            -webkit-line-clamp: 1;
+        }
+
+        .fontSmall {
+            font-size: small;
+        }
+
+        .fontSizeBackText {
+            font-size: 13px
+        }
+
+        .fontMedium {
+            font-size: medium;
+        }
+
+        .fontLarge {
+            font-size: large;
+        }
+
+        .fontAlignJustify {
+            text-align: justify;
+        }
+
+        .fontAlignLeft {
+            text-align: left;
+        }
+
+        .fontAlignRight {
+            text-align: right;
+        }
+
+        .fontAlignCenter {
+            text-align: center;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            // border-bottom: 1px dotted #ee3134;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #ee3134;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            /* Position the tooltip */
+            position: relative;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        .flipfloptext {
+            position: relative;
+            width: 256px;
+            height: 180px;
+            -webkit-perspective: 1000px;
+            perspective: 1000px;
+        }
+
+        .flipBCardBackDiplayFlex {
+            display: flex;
+        }
+
+        .themecolor {
+            background-color: #0078d4;
+            // background-image: linear-gradient(to bottom right, rgba(0, 120, 212, 1), #68e694);
+        }
+
+        .textblock {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: black;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .modalContent {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+            position: relative;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: 6px;
+            outline: 0;
+
+            .modalBody {
+                position: relative;
+                padding: 15px;
+            }
+        }
+
+        #flipfloptextShow {
+            display: block;
+        }
+
+        .ms-ChoiceField ms-ChoiceField--icon root-335 {
+            height: 150% !important;
+        }
+    }
+
+    .pagination {
+        .pager {
+            padding-left: 0;
+            margin: 20px 0;
+            text-align: center;
+            list-style: none;
+
+            li {
+                display: inline;
+                padding: 0px 10px;
+
+                button {
+                    display: inline-block;
+                    padding: 5px 14px;
+                    background-color: $ms-color-themePrimary;
+                    border: 1px solid #ddd;
+                    border-radius: 15px;
+                    color: #fff;
+                    text-decoration: none;
+
+                    &:disabled {
+                        background-color: $ms-color-neutralTertiary;
+                    }
+                }
+            }
+        }
+    }
+
+    .loader {
+        margin: 0 auto;
+
+        .circle {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    .customIcons {
+        .msIconTag {
+            font-size: 18px;
+            vertical-align: middle;
+        }
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .visible {
+        visibility: visible !important;
+    }
+
+    // .status {
+    //     float: left
+    // }
+
+    figcaption {
+        //background-color: #eee;
+        // padding: 10px 0px 29px 18px;
+        text-align: left;
+        // text-decoration: none;
+        // font-size: medium;
+        // font-family: inherit;
+        // font-weight: 400;
+        // word-break: break-all;
+    }
+
+    .figcaptioncls {
+        // padding: 10px 0px 29px 18px;
+        //padding: 13px 22px 29px 18px;
+        padding: 12px 0px 29px 18px;
+    }
+
+    .figcaptioncompactsmallleft {
+        padding: 1px 24px 26px 19px;
+    }
+
+    .figcaptioncompactsmallcenter {
+        padding: 5px 21px 30px 18px;
+    }
+
+    .figcaptionclscompactsmallright {
+        padding: 12px 24px 26px 18px;
+    }
+
+    .figcaptioncompactmediumleft {
+        padding: 7px 25px 29px 18px;
+    }
+
+    .figcaptioncompactmediumright {
+        padding: 12px 24px 29px 18px;
+    }
+
+    .figcaptioncompactmediumcenter {
+        padding: 0px 22px 29px 18px;
+    }
+
+    .figcaptioncompactlargeleft {
+        padding: 8px 26px 29px 18px;
+    }
+
+    .figcaptioncompactlargecenter {
+        padding: 11px 23px 29px 18px;
+    }
+
+    .figcaptioncompactlarge {
+        //padding:0px 0px 16px 8px;
+        padding: 10px 23px 16px 8px;
+    }
+
+    .figcaptionmediumsmallleft {
+        padding: 0px 0px 35px 24px;
+    }
+
+    .figcpationmediumsmallcenter {
+        padding: 0px 0px 33px 18px;
+    }
+
+    .figcaptionmediumsmallright {
+        padding: 7px 0px 38px 29px;
+        padding-left: 6px !important;
+    }
+
+    .figcpationmediummediumright {
+        padding: 8px 0 29px 19px;
+        padding-left: 10px !important;
+    }
+
+    .figcaptionmediummediumcenter {
+        padding: 7px 0 29px 18px;
+    }
+
+    .figcaptionmediumlargeleft {
+        padding: 8px 0px 29px 18px;
+    }
+
+    .figcaptionmediumlargeright {
+        padding: 9px 0px 27px 18px;
+        padding-left: 10px !important;
+    }
+
+    .figcaptionmediumlargecenter {
+        padding: 7px 0 29px 18px;
+    }
+
+    .figcaptionlargesmallleft {
+        padding: 36px 0 49px 36px;
+        padding-left: 33px ! important;
+        padding-right: 3px !important;
+    }
+
+    .figcaptionlargesmallcenter {
+        padding: 40px 0 49px 36px;
+        padding-left: 30px !important;
+    }
+
+    .figcaptionlargesmallright {
+        padding: 40px 0 49px 36px;
+        padding-left: 23px !important;
+    }
+
+    .figcaptionlargemediumleft {
+        padding: 35px 0 49px 36px;
+        padding-left: 30px !important;
+    }
+
+    .figcaptionlargemediumcenter {
+        padding: 34px 0 49px 36px;
+        padding-left: 18px !important;
+    }
+
+    .figcaptionlargemediumright {
+        padding: 33px 0 49px 36px;
+        padding-left: 30px ! important;
+    }
+
+    .figcaptionlargelargeleft {
+        padding: 26px 0 49px 36px;
+        padding-left: 29px !important;
+    }
+
+    .figcaptionlargelargecenter {
+        padding: 32px 0 49px 36px;
+        padding-left: 19px !important;
+    }
+
+    .figcaptionlargelargeright {
+        padding: 30px 0 49px 36px;
+        padding-left: 21px !important;
+    }
+
+    .figcaptionlarge {
+        padding: 26px 0px 49px 36px;
+        // padding: 10px 23px 16px 8px;
+    }
+
+    .CompactSmallLeft {
+        padding: 26px 0px 49px 36px;
+    }
+
+    .flipCardTitle {
+        overflow: hidden;
+        padding: 5px 0 0 0;
+        width: 195px;
+        height: 40px;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardBackText {
+        overflow: hidden;
+        padding: 5px 0 0 0;
+        width: 212px;
+        height: 156px;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardBack {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .flipCardImageSizeCompact {
+        width: 212px;
+        height: 104px;
+    }
+
+    .flipCardImageSizeButtonSmall {
+        width: 195px;
+        height: 75px;
+    }
+
+    .flipCardImageSizeButtonLarge {
+        width: 195px;
+        height: 80px;
+    }
+
+    .flipCardImageSizeMedium {
+        width: 256px;
+        height: 114px;
+    }
+
+    .flipCardImageSizeLarge {
+        width: 314px;
+        height: 176px;
+    }
+
+    .flipCardImageButtonSmall {
+        width: 10px;
+        height: 10px;
+    }
+
+    .flipCard {
+        background-color: transparent;
+        width: 212px;
+        height: 156px;
+        perspective: 1000px;
+    }
+
+    .flipCarde {
+        background-color: transparent;
+        width: 212px;
+        height: 156px;
+        perspective: 1000px;
+    }
+
+    .flipCardButtonSmall {
+        background-color: transparent;
+        width: 195px;
+        height: 75px;
+        perspective: 1000px;
+    }
+
+    .flipCardButtonLarge {
+        background-color: transparent;
+        width: 195px;
+        height: 80px;
+        perspective: 1000px;
+    }
+
+    .flipCardX {
+        background-color: transparent;
+        width: 212px;
+        height: 156px;
+        perspective: 1000px;
+    }
+
+    .flipCardMedium {
+        background-color: transparent;
+        width: 256px;
+        height: 166px;
+        perspective: 1000px;
+    }
+
+    .flipCardeMedium {
+        background-color: transparent;
+        width: 256px;
+        height: 166px;
+        perspective: 1000px;
+    }
+
+    .flipCardXMedium {
+        background-color: transparent;
+        width: 256px;
+        height: 166px;
+        perspective: 1000px;
+    }
+
+    .flipCardLarge {
+        background-color: transparent;
+        width: 314px;
+        height: 226px;
+        perspective: 1000px;
+    }
+
+    .flipCardeLarge {
+        background-color: transparent;
+        width: 314px;
+        height: 226px;
+        perspective: 1000px;
+    }
+
+    .flipCardXLarge {
+        background-color: transparent;
+        width: 314px;
+        height: 226px;
+        perspective: 1000px;
+    }
+
+    .flipCardInner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        //IE 11 Fix
+        // transition: transform 0.6s;
+        // transform-style: preserve-3d;
+        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    //Old IE
+    // .flipCard:hover .flipCardInner {
+    //    transform: rotateY(180deg);
+    //    cursor: pointer;
+    //}
+
+    .flipCard:hover .flipCardFront {
+        transform: rotateY(180deg);
+        cursor: pointer;
+    }
+
+    //IE 11 Fix
+    .flipCard:hover .flipCardBack {
+        transform: rotateY(0deg);
+    }
+
+    .flipCardButtonSmall:hover .flipCardBack {
+        transform: rotateY(0deg);
+    }
+
+    .flipCardMedium:hover .flipCardBack {
+        transform: rotateY(0deg);
+    }
+
+    .flipCardLarge:hover .flipCardBack {
+        transform: rotateY(0deg);
+    }
+
+    .flipCardX:hover .flipCardXBack {
+        transform: rotateX(0deg);
+    }
+
+    .flipCardXMedium:hover .flipCardXBack {
+        transform: rotateX(0deg);
+    }
+
+    .flipCardXLarge:hover .flipCardXBack {
+        transform: rotateX(0deg);
+    }
+
+    // .flipCardMedium:hover .flipCardInner {
+    //     transform: rotateY(180deg);
+    //     cursor: pointer;
+    // }
+    //IE 11 Fix
+    .flipCardMedium:hover .flipCardFront {
+        transform: rotateY(180deg);
+        cursor: pointer;
+    }
+
+    // .flipCardLarge:hover .flipCardInner {
+    //     transform: rotateY(180deg);
+    //     cursor: pointer;
+    // }
+
+    //IE 11 Fix
+    .flipCardLarge:hover .flipCardFront {
+        transform: rotateY(180deg);
+        cursor: pointer;
+    }
+
+    // .flipCardX:hover .flipCardInner {
+    //     transform: rotateX(180deg);
+    //     cursor: pointer;
+    // }
+
+    //IE 11 Fix
+    .flipCardX:hover .flipCardFront {
+        transform: rotateX(180deg);
+        cursor: pointer;
+    }
+
+    .flipCardXMedium:hover .flipCardFront {
+        transform: rotateX(180deg);
+        cursor: pointer;
+    }
+
+    .flipCardXLarge:hover .flipCardFront {
+        transform: rotateX(180deg);
+        cursor: pointer;
+    }
+
+    // .flipCardXMedium:hover .flipCardInner {
+    //     transform: rotateX(180deg);
+    //     cursor: pointer;
+    // }
+    // .flipCardXLarge:hover .flipCardInner {
+    //     transform: rotateX(180deg);
+    //     cursor: pointer;
+    // }
+    .flipCarde:hover .flipCardInner {
+        cursor: pointer;
+    }
+
+    .flipCardeMedium:hover .flipCardInner {
+        cursor: pointer;
+    }
+
+    .flipCardeLarge:hover .flipCardInner {
+        cursor: pointer;
+    }
+
+    .flipCardFront {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        //IE 11 Fix
+        transition: 0.9s;
+        transform-style: preserve-3d;
+    }
+
+    .flipCardBack,
+    .flipCardXBack {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        //IE 11 Fix
+        transition: 0.9s;
+        transform-style: preserve-3d;
+    }
+
+    .flipCardFront {
+        background-color: #bbb;
+        color: white;
+    }
+
+    .flipCardBack {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+        overflow: hidden;
+        padding: 5px 0px 0px 5px;
+    }
+
+    p.flipCardBackTextCompact,
+    p.flipCardBackTextMedium,
+    p.flipCardBackTextLarge {
+        min-height: 10em;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .flipCardXBack {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateX(180deg);
+        overflow: hidden;
+        padding: 5px 0px 0px 5px;
+    }
+
+    .flipCardTitleCompactLarge {
+        overflow: hidden;
+        width: 195px;
+        height: 48px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardTitleCompactMedium {
+        overflow: hidden;
+        width: 195px;
+        height: 46px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardTitleCompactSmall {
+        overflow: hidden;
+        width: 195px;
+        height: 35px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardTitleButtonSmall {
+        overflow: hidden;
+        width: 195px;
+        height: 75px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardTitleMediumSmall {
+        overflow: hidden;
+        width: 245px;
+        height: 38px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardTitleMediumMedium {
+        overflow: hidden;
+        width: 245px;
+        height: 40px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardTitleCompactSmall {
+        overflow: hidden;
+        width: 195px;
+        height: 38px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardTitleLargeSmall {
+        overflow: hidden;
+        width: 295px;
+        height: 38px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardTitleLargeMedium {
+        overflow: hidden;
+        width: 295px;
+        height: 40px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardTitleLargeLarge {
+        overflow: hidden;
+        width: 295px;
+        height: 40px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardBackTextCompact {
+        overflow: hidden;
+        padding: 5px 0px 0px 0px;
+        width: 207px;
+        height: 111px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardBackTextMedium {
+        overflow: hidden;
+        padding: 5px 0px 0px 0px;
+        width: 251px;
+        height: 156px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardBackTextLarge {
+        overflow: hidden;
+        padding: 5px 0px 0px 0px;
+        width: 309px;
+        height: 221px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+    }
+
+    .flipCardBackTextButton {
+        overflow: hidden;
+        // padding: 5px 0px 0px 0px;
+        width: 195px;
+        height: 75px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+        font-size: small;
+    }
+
+    .flipCardBackTextButtonMedium {
+        overflow: hidden;
+        // padding: 5px 0px 0px 0px;
+        width: 195px;
+        height: 75px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+        font-size: medium;
+
+    }
+
+    .flipCardBackTextButtonLarge {
+        overflow: hidden;
+        // padding: 5px 0px 0px 0px;
+        width: 195px;
+        height: 75px;
+        word-break: break-word;
+        text-overflow: ellipsis;
+        font-size: large;
+
+    }
+
+    //Card Size: Compact
+    .flipCardTitleCompactSmallLeft {
+        padding: 5px 0px 0px 5px;
+        text-align: left;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleCompactSmallCenter {
+        padding: 5px 0px 0px 0px;
+        text-align: center;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleCompactSmallRight {
+        padding: 5px 0px 0px 0px;
+        text-align: right;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    //
+    //Card Size: Button Small
+    .flipCardTitleButtonSmallLeft {
+        // padding: 5px 0px 0px 5px;
+        // text-align: left;
+        // font-size: small;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 4;
+        // display: -webkit-inline-box;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        border-radius: 8px;
+        margin-left: 0px;
+        // box-shadow: 5px 4px rgb(181 1 88);
+        text-align: left;
+        width: 185px;
+        font-size: small;
+    }
+
+    .flipCardTitleButtonSmallCenter {
+        // padding: 15px 0px 0px 0px;
+        // text-align: center;
+        // font-size: small;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 4;
+        // display: -webkit-inline-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin-left: 0px;
+        // box-shadow: 5px 4px rgb(181 1 88);
+        text-align: center;
+        width: 185px;
+        font-size: small;
+    }
+
+    .flipCardTitleButtonSmallRight {
+        // padding: 5px 0px 0px 0px;
+        // text-align: right;
+        // font-size: small;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 4;
+        // display: -webkit-inline-box;
+        display: grid;
+        justify-content: right;
+        align-items: center;
+        border-radius: 8px;
+        margin-left: 0px;
+        // box-shadow: 5px 4px rgb(181 1 88);
+        text-align: right;
+        width: 185px;
+        font-size: small;
+    }
+
+
+    .flipCardTitleCompactMediumLeft {
+        padding: 0px 0px 0px 5px;
+        text-align: left;
+        font-size: medium;
+        -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleButtonSmallMediumLeft {
+        // padding: 15px 0px 0px 5px;
+        // text-align: left;
+        // font-size: medium;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 3;
+        // display: -webkit-inline-box;
+        font-size: medium;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 2;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        border-radius: 8px;
+        margin-left: 0px;
+        // box-shadow: 5px 4px rgb(181 1 88);
+        text-align: left;
+        width: 185px;
+    }
+
+    .flipCardTitleButtonSmallMediumCenter {
+        // padding: 15px 0px 0px 0px;
+        // text-align: center;
+        // font-size: medium;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 3;
+        // display: -webkit-inline-box;
+        font-size: medium;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin-left: 0px;
+        // box-shadow: 5px 4px rgb(181 1 88);
+        text-align: center;
+        width: 185px;
+
+    }
+
+    .flipCardTitleButtonSmallMediumRight {
+        // padding: 15px;
+        // text-align: right;
+        // font-size: medium;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 3;
+        // display: -webkit-inline-box;
+        font-size: medium;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 2;
+        display: grid;
+        justify-content: right;
+        align-items: center;
+        border-radius: 8px;
+        margin-left: 0px;
+        // box-shadow: 5px 4px rgb(181 1 88);
+        text-align: right;
+        width: 185px;
+    }
+
+    .flipCardTitleButtonSmallLargeLeft {
+        // padding: 1px 0px 0px 5px;
+        // text-align: left;
+        // font-size: large;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 3;
+        // display: -webkit-inline-box;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        border-radius: 8px;
+        margin-left: 0px;
+        // box-shadow: 5px 4px rgb(181 1 88);
+        text-align: left;
+        width: 185px;
+        font-size: large;
+    }
+
+    .flipCardTitleButtonSmallLargeCenter {
+        // padding: 1px 0px 0px 0px;
+        // text-align: center;
+        // font-size: large;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 3;
+        // display: -webkit-inline-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin-left: 0px;
+        // box-shadow: 5px 4px rgb(181 1 88);
+        text-align: center;
+        width: 185px;
+        font-size: large;
+    }
+
+    .flipCardTitleButtonSmallLargeRight {
+        // padding: 1px 0px 0px 0px;
+        // text-align: right;
+        // font-size: large;
+        // -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 3;
+        // display: -webkit-inline-box;
+        display: grid;
+        justify-content: right;
+        align-items: center;
+        border-radius: 8px;
+        margin-left: 0px;
+        // box-shadow: 5px 4px rgb(181 1 88);
+        text-align: right;
+        width: 185px;
+        font-size: large;
+    }
+
+    //Medium
+
+    .flipCardTitleMediumSmallLeft {
+        padding: 5px 0px 0px 5px;
+        text-align: left;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumSmallCenter {
+        padding: 5px 0px 0px 0px;
+        text-align: center;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        // -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumSmallRight {
+        padding: 5px 0px 0px 40px;
+        text-align: right;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleCompactMediumLeft {
+        padding: 0px 0px 0px 5px;
+        text-align: left;
+        font-size: medium;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleCompactMediumCenter {
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+        font-size: medium;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleCompactMediumRight {
+        padding: 0px 0px 0px 0px;
+        text-align: right;
+        font-size: medium;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleCompactLargeLeft {
+        padding: 1px 0px 0px 5px;
+        text-align: left;
+        font-size: large;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleCompactLargeCenter {
+        padding: 1px 0px 0px 0px;
+        text-align: center;
+        font-size: large;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleCompactLargeRight {
+        padding: 1px 0px 0px 0px;
+        text-align: right;
+        font-size: large;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    // Card Size: Medium
+    .flipCardTitleMediumSmallLeft {
+        padding: 5px 0px 0px 5px;
+        text-align: left;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumSmallCenter {
+        padding: 5px 0px 0px 0px;
+        text-align: center;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumSmallRight {
+        padding: 5px 0px 0px 0px;
+        text-align: right;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumSmallLeft {
+        padding: 5px 0px 0px 5px;
+        text-align: left;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumSmallCenter {
+        padding: 5px 0px 0px 0px;
+        text-align: center;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumSmallRight {
+        padding: 5px 0px 0px 0px;
+        text-align: right;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumMediumLeft {
+        padding: 0px 0px 5px 5px;
+        text-align: left;
+        font-size: medium;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumMediumCenter {
+        padding: 0px 0px 5px 3px;
+        text-align: center;
+        font-size: medium;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumMediumRight {
+        padding: 0px 0px 5px 0px;
+        text-align: right;
+        font-size: medium;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumLargeLeft {
+        padding: 0px 0px 10px 5px;
+        text-align: left;
+        font-size: large;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumLargeCenter {
+        padding: 0px 0px 10px 3px;
+        text-align: center;
+        font-size: large;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleMediumLargeRight {
+        padding: 0px 0px 10px 0px;
+        text-align: right;
+        font-size: large;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    // Card Size: Large
+    .flipCardTitleLargeSmallLeft {
+        padding: 5px 0px 0px 5px;
+        text-align: left;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleLargeSmallCenter {
+        padding: 5px 0px 0px 0px;
+        text-align: center;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleLargeSmallRight {
+        padding: 5px 0px 0px 0px;
+        text-align: right;
+        font-size: small;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleLargeMediumLeft {
+        padding: 0px 0px 5px 5px;
+        text-align: left;
+        font-size: medium;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleLargeMediumCenter {
+        padding: 0px 0px 5px 3px;
+        text-align: center;
+        font-size: medium;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleLargeMediumRight {
+        padding: 0px 0px 5px 0px;
+        text-align: right;
+        font-size: medium;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleLargeLargeLeft {
+        padding: 0px 0px 10px 5px;
+        text-align: left;
+        font-size: large;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleLargeLargeCenter {
+        padding: 0px 0px 10px 3px;
+        text-align: center;
+        font-size: large;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+
+    .flipCardTitleLargeLargeRight {
+        padding: 0px 0px 10px 0px;
+        text-align: right;
+        font-size: large;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        display: -webkit-inline-box;
+    }
+}
+
+//common
+.panel {
+    border-color: #ddd;
+    margin-bottom: 20px;
+    background-color: #ffff;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-sizing: content-box;
+
+    .panelBody {
+        padding: 15px 0px;
+    }
+}
+
+
+//Gallery Alignment
+.alignLeft {
+    justify-content: flex-start;
+}
+
+.alignCenter {
+    justify-content: center;
+}
+
+.alignRight {
+    justify-content: flex-end;
+}
+
+.listGroup {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    max-width: 400px;
+    margin-top: 0;
+
+    .listGroupItem {
+        position: relative;
+        display: block;
+        padding: .75rem 1.25rem;
+        margin-bottom: -1px;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, .125);
+    }
+}
