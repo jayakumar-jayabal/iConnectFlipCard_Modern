@@ -527,7 +527,7 @@ export default class ImageGalleryWebPart extends BaseClientSideWebPart<IImageGal
                     // imageSrc: 'https://thermofisher.sharepoint.com/sites/ModernApps/Images1/ThemeColor/32/ThermoFisherTheme.jpg',
                     imageSrc: `${this.CDNBaseUrl}/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/TFSTheme.jpg`,
                     imageSize: { width: this.ThemeWidth, height: 32 },
-                    selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/TFSTheme.jpg',
+                    // selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/TFSTheme.jpg',
                     checked: true                                     
                   },
                   {
@@ -536,7 +536,7 @@ export default class ImageGalleryWebPart extends BaseClientSideWebPart<IImageGal
                     imageSrc: `${this.CDNBaseUrl}/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/TFSTheme.jpg`,
                     // imageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryRed.jpg',
                     imageSize: { width: this.ThemeWidth, height: 32 },
-                    selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryRed.jpg'
+                    // selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryRed.jpg'
                   },
                   {
                     key: 'Dark:#005bac;Light:#5293cd',
@@ -544,56 +544,56 @@ export default class ImageGalleryWebPart extends BaseClientSideWebPart<IImageGal
                     imageSrc: `${this.CDNBaseUrl}/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryBlue.jpg`,
                     // imageSrc: PrimaryBlue,
                     imageSize: { width: this.ThemeWidth, height: 32 },
-                    selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryBlue.jpg'
+                    // selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryBlue.jpg'
                   },
                   {
                     key: 'Dark:#595959;Light:#9c9c9c',
                     text: 'Primary Grey',
                     imageSrc: `${this.CDNBaseUrl}/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryGrey.jpg`,
                     imageSize: { width: this.ThemeWidth, height: 32 },
-                    selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryGrey.jpg'
+                    // selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryGrey.jpg'
                   },
                   {
                     key: 'Dark:#261f63;Light:#655fa2',
                     text: 'Primary Purple',
                     imageSrc: `${this.CDNBaseUrl}/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryPurple.jpg`,
                     imageSize: { width: this.ThemeWidth, height: 32 },
-                    selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryPurple.jpg'
+                    // selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/PrimaryPurple.jpg'
                   },
                   {
                     key: 'Dark:#7473c3;Light:#a5a5da',
                     text: 'Secondary Purple',
                     imageSrc: `${this.CDNBaseUrl}/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryPurple.jpg`,
                     imageSize: { width: this.ThemeWidth, height: 32 },
-                    selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryPurple.jpg'
+                    // selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryPurple.jpg'
                   },
                   {
                     key: 'Dark:#016682;Light:#499db4',
                     text: this.SecondaryTeal,
                     imageSrc: `${this.CDNBaseUrl}/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryTeal.jpg`,
                     imageSize: { width: this.ThemeWidth, height: 32 },
-                    selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryTeal.jpg'
+                    // selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryTeal.jpg'
                   },
                   {
                     key: 'Dark:#0e89e9;Light:#69b6f1',
                     text: this.SecondaryBlue,
                     imageSrc: `${this.CDNBaseUrl}/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryBlue.jpg`,
                     imageSize: { width: this.ThemeWidth, height: 32 },
-                    selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryBlue.jpg'
+                    // selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryBlue.jpg'
                   },
                   {
                     key: 'Dark:#ad1e2d;Light:#ce6772',
                     text: this.SecondaryRed,
                     imageSrc: `${this.CDNBaseUrl}/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryRed.jpg`,
                     imageSize: { width: this.ThemeWidth, height: 32 },
-                    selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryRed.jpg'
+                    // selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryRed.jpg'
                   },
                   {
                     key: 'Dark:#5989b7;Light:#93b5d4',
                     text:  this.SecondaryBlueGrey,
                     imageSrc: `${this.CDNBaseUrl}/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryBlueGrey.jpg`,
                     imageSize: { width: this.ThemeWidth, height: 32 },
-                    selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryBlueGrey.jpg'
+                    // selectedImageSrc: 'https://publiccdn.sharepointonline.com/thermofisher.sharepoint.com/CDN/publishingimages/ModernThemes/SecondaryBlueGrey.jpg'
                   }
                 ]       
                 }),
