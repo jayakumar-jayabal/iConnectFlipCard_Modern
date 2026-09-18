@@ -305,7 +305,7 @@ export default class ImageGalleryWebPart extends BaseClientSideWebPart<IImageGal
       pages: [
         {
           header: {
-            description: "Flip Card Settings 3.0"
+            description: "Flip Card Settings 3.1"
           },
           // ADDED: to turn groups into accordions
           displayGroupsAsAccordion: true,
